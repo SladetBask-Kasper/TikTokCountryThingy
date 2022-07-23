@@ -6,8 +6,15 @@ const flags = ['🇮🇸', '🇳🇴', '🇸🇪', '🇫🇮', '🇩🇰', '🇩
  function rand(max) {
     return Math.floor(Math.random() * max);
  }
+ function isTaken(flag) {
+    return document.getElementById("Categories").innerHTML.includes(flag)
+ }
  function getFlag() {
-    document.getElementById("ShowFlag").innerHTML = "<emo>" + flags[rand(flags.length)] + "</emo>";
+    var flag = '';
+    while (isTaken(flag)) {
+        flag = flags[rand(flags.length)]
+    }
+    document.getElementById("ShowFlag").innerHTML = "<emo>" + flag + "</emo>";
  }
 document.addEventListener('DOMContentLoaded', function() {
     getFlag();
