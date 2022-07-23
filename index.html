@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Country Thingy</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://sladetbask-kasper.github.io/Mr.WorldWide/materialize/css/materialize.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://sladetbask-kasper.github.io/Mr.WorldWide/materialize/js/materialize.js"></script>
+        <script src="script.js"></script>
+        <br>
+        <center><h1>TikTok Country Thingy</h1></center>
+        <br>
+
+        <center><div id="ShowFlag"></div></center>
+        <center><a class="waves-effect waves-light btn" style="font-size: 32px;" onclick="getFlag()">
+        Get new country</a></center>
+
+        <ul id="Categories">
+            <li id="wh"><a class="OptUsable" href="javascript:clickWeather()">Weather:</a></li>
+            <li id="fd"><a class="OptUsable" href="javascript:clickFood()">Food:</a></li>
+            <li id="pe"><a class="OptUsable" href="javascript:clickPeople()">People:</a></li>
+            <li id="sa"><a class="OptUsable" href="javascript:clickSafety()">Safety:</a></li>
+            <li id="gov"><a class="OptUsable" href="javascript:clickGovernment()">Government:</a></li>
+            <li id="mil"><a class="OptUsable" href="javascript:clickMilitary()">Military:</a></li>
+            <li id="be"><a class="OptUsable" href="javascript:clickBeauty()">Natural Beauty:</a></li>
+            <li id="eco"><a class="OptUsable" href="javascript:clickEconomy()">Economy:</a></li>
+            <li id="his"><a class="OptUsable" href="javascript:clickHistory()">History:</a></li>
+            <li id="cul"><a class="OptUsable" href="javascript:clickCulture()">Culture:</a></li>
+        </ul>
+        <br>
+        <center><a class="waves-effect waves-light btn" style="font-size: 32px;" onclick="reset()">Reset</a></center>
+    </body>
+</html>

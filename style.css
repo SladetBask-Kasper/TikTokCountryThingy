@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'emoji';
+  src: url('https://sladetbask-kasper.github.io/Mr.WorldWide/materialize/fonts/NotoColorEmoji.ttf');
+}
+.emo {
+  font-family: emoji;
+}
+emo {
+  font-family: emoji;
+}
+
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 1%;
+}
+#ShowFlag {
+    font-size: 84px;
+}
+#Categories {
+    font-size: 28px;
+    padding-left: 20%;
+    padding-right: 10%;
+}
+.OptUsed {
+    color: black;
+}
+.OptUsable {
+    color: hotpink;
+}
